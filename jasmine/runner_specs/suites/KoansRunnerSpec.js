@@ -186,13 +186,13 @@ describe("KoansRunner", function() {
       var divs = body.getElementsByTagName("div");
       var failedSpecDiv = findElement(divs, 'suite failed');
       expect(failedSpecDiv.className).toEqual('suite failed');
-      expect(failedSpecDiv.innerHTML).toContain("damaging your karma");
+      expect(failedSpecDiv.innerHTML).toContain("sprinking stardust on your karma");
       expect(failedSpecDiv.innerHTML).not.toContain("has expanded your awareness");
 
       var passedSpecDiv = findElement(divs, 'suite passed');
       expect(passedSpecDiv.className).toEqual('suite passed');
       expect(passedSpecDiv.innerHTML).toContain("has expanded your awareness");
-      expect(passedSpecDiv.innerHTML).not.toContain("damaging your karma");
+      expect(passedSpecDiv.innerHTML).not.toContain("sprinking stardust on your karma");
     });
   });
 
